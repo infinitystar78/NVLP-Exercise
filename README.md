@@ -61,10 +61,10 @@ Additionally a library called AlamoFireEventSource has been forked to listen for
 
 SSE is not widely used for iOS and has much less support than websockets, two libaries were tried, and both were unable to understand the delimiters that the events are using, which is why the AlamofireEvent source has been forked to simply decode the data into a JSON string using UTF8 and then parse that JSON. 
 
-# Next Steps - Further Development
+# Next Steps - Further Development / TODO
 
 * Improve test coverage by writing tess for the networking layer using mock objects and stubs.
-* Introduce presenters to allow dependency injection of values into viewcontrollers to improve testability.
+* Introduce presenters to allow dependency injection of values into ViewControllers to improve testability.
 * Write test cases for UserDefaults using mocks.
 * Write a data persistance layer using CoreData or Realm.
 * Format charts to improve readability.
