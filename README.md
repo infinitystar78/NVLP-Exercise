@@ -38,9 +38,11 @@ The application is required to do the following :
 
 # Architecture
 
-The application has followed a basis MVVM pattern, with some class extensions and one subclass for convenience methods. 
+As this application is relativley simple a single storyboard has been used with two ViewControllers, with the second being embedded in a UINavigationController. each view controller has a corresponding view model to handle data logic, and business logice, with the ViewControllers handling presentation logic, these ViewControllers could be reduced in size further through the use of presenters.
 
-The networking layer follows a protocol based approach, using URLSession, AlamoFire is used to connect to the Server Sent Events server.
+The application has followed a basis MVVM pattern, with some class extensions and one subclass for convenience methods and helpers. 
+
+The networking layer follows a protocol based approach, using URLSession, AlamoFire is used to connect to the Server Sent Events server, as a forked version of a SS E event handler has been used.
 
 The secure Keychain is used to store the token.
 
@@ -59,17 +61,17 @@ Additionally a library called AlamoFireEventSource has been forked to listen for
 
 # Next Steps - Challenges
 
-SSE is not widely used for iOS and has much less support than websockets, two libaries were tried, and both were unable to understand the delimiters that the events are using, which is why the AlamofireEvent source has been forked to simply decode the data into a JSON string using UTF8 and then parse that JSON. 
+SSE is not widely used for iOS and has much less support than websockets, two libaries were tried, and both were unable to understand the delimiters that the events are using, which is why the AlamofireEvent source has been forked to simply decode the data into a JSON string using UTF8 and then parse that JSON ready to be consumed into the view models.
 
-# Next Steps - Further Development
+# Next Steps - Further Development / TODO
 
 * Improve test coverage by writing tess for the networking layer using mock objects and stubs.
-* Introduce presenters to allow dependency injection of values into viewcontrollers to improve testability.
+* Introduce presenters to allow dependency injection of values into ViewControllers to improve testability.
 * Write test cases for UserDefaults using mocks.
 * Write a data persistance layer using CoreData or Realm.
 * Format charts to improve readability.
 * Basic UI tests.
-* Investigate what delimiters are being used by the events, as they seem to be non standard, which is why a fork of the event data parser has been used. Perhaps use websockets instead but needs to be aligned with the logic behind using SSE.
+* Investigate what delimiters are being used by the events, as they seem to be non standard, which is why a fork of the event data handler has been used. Perhaps use websockets instead but needs to be aligned with the logic behind using SSE.
 
 
 
