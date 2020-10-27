@@ -72,9 +72,7 @@ class ChartViewModel {
                     if currency.key == k{
                         c = i - currency.value
                     }
-                    
                 }
-               
                 let name = current[index].name
                 outputChanges[name] = c
             }

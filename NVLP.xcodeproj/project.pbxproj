@@ -16,6 +16,7 @@
 		B07F86E52547B20E00815747 /* IntroViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F86E42547B20E00815747 /* IntroViewModelTest.swift */; };
 		B07F86ED2547B7B300815747 /* IntroViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F86EC2547B7B200815747 /* IntroViewControllerTest.swift */; };
 		B07F86F22547BB6B00815747 /* ChartViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F86F12547BB6B00815747 /* ChartViewControllerTest.swift */; };
+		B07F87062548755800815747 /* ChartViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07F87052548755800815747 /* ChartViewModelTest.swift */; };
 		B0875A97253B3BD30046FBDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0875A96253B3BD30046FBDF /* AppDelegate.swift */; };
 		B0875A99253B3BD30046FBDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0875A98253B3BD30046FBDF /* SceneDelegate.swift */; };
 		B0875A9E253B3BD30046FBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0875A9C253B3BD30046FBDF /* Main.storyboard */; };
@@ -85,6 +86,7 @@
 		B07F86E42547B20E00815747 /* IntroViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModelTest.swift; sourceTree = "<group>"; };
 		B07F86EC2547B7B200815747 /* IntroViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewControllerTest.swift; sourceTree = "<group>"; };
 		B07F86F12547BB6B00815747 /* ChartViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewControllerTest.swift; sourceTree = "<group>"; };
+		B07F87052548755800815747 /* ChartViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModelTest.swift; sourceTree = "<group>"; };
 		B0875A93253B3BD30046FBDF /* NVLP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVLP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0875A96253B3BD30046FBDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0875A98253B3BD30046FBDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				B0875AB0253B3BD50046FBDF /* NVLPTests.swift */,
 				B07F86DC2547AD2400815747 /* SSETest.swift */,
 				B07F86E42547B20E00815747 /* IntroViewModelTest.swift */,
+				B07F87052548755800815747 /* ChartViewModelTest.swift */,
 				B07F86EC2547B7B200815747 /* IntroViewControllerTest.swift */,
 				B07F86F12547BB6B00815747 /* ChartViewControllerTest.swift */,
 				B0875AB2253B3BD50046FBDF /* Info.plist */,
@@ -621,6 +624,7 @@
 				B07F86F22547BB6B00815747 /* ChartViewControllerTest.swift in Sources */,
 				B07F86DD2547AD2500815747 /* SSETest.swift in Sources */,
 				B07F86ED2547B7B300815747 /* IntroViewControllerTest.swift in Sources */,
+				B07F87062548755800815747 /* ChartViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
