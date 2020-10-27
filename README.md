@@ -1,5 +1,5 @@
 # nvlp
-NVLP - Excercise
+NVLP - Exercise
 
 # Instructions
 
