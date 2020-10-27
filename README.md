@@ -53,6 +53,11 @@ Tests have been written for the models and viewcontrollers
 4. KRProgressHUD - Activity indicator
 5. Charts.  - Charting and graphs.
 
+Additionally a library called AlamoFireEventSource has been forked to listen for SSE events.
+
+# Next Steps - Challenges
+
+SSE is not widely used for iOS and has much less support than websockets, two libaries were tried, and both were unable to understand the delimiters that the events are using, which is why the AlamofireEvent source has been forked to simply decode the data into a JSON string using UTF8 and then parse that JSON. 
 
 # Next Steps - Further Development
 
@@ -60,6 +65,11 @@ Tests have been written for the models and viewcontrollers
 * Introduce presenters to allow dependency injection of values into viewcontrollers to improve testability.
 * Format charts to improve readability.
 * Basic UI tests.
+* Investigate what delimiters are being used by the events, as they seem to be non standard, which is why a fork of the event data parser has been used. Perhaps use websockets instead but needs to be aligned with the logic behind using SSE.
+
+
+
+
 
 
 
