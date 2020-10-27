@@ -17,7 +17,6 @@ class SSEConnection{
     
     public func connectToEventSource(completionHandler:@escaping(Bool)->()){
            let endpoint = URL(string: constant_endpoint)!
-        
         _ = Session.default.eventSourceRequest(endpoint, headers:[constant_content_type_header: constant_content_type_value, constant_token_header: Token.retrieveToken()], lastEventID: "0").responseEventSource { eventSource in
             completionHandler(true)
             switch eventSource.event {

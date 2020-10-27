@@ -9,13 +9,7 @@ import Foundation
 import UIKit
 
 extension UIFont{
-    
-    /*
-    let mediumFont = UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.medium)
-    let lightFont = UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.light)
-    let boldFont = UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.bold)
-    */
-    
+
     class var buttonFont : UIFont{
         return UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.bold)
     }

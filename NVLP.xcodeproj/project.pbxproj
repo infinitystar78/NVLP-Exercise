@@ -23,7 +23,6 @@
 		B0875AA1253B3BD30046FBDF /* NVLP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0875A9F253B3BD30046FBDF /* NVLP.xcdatamodeld */; };
 		B0875AA3253B3BD50046FBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0875AA2253B3BD50046FBDF /* Assets.xcassets */; };
 		B0875AA6253B3BD50046FBDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0875AA4253B3BD50046FBDF /* LaunchScreen.storyboard */; };
-		B0875AB1253B3BD50046FBDF /* NVLPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0875AB0253B3BD50046FBDF /* NVLPTests.swift */; };
 		B0875ABC253B3BD50046FBDF /* NVLPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0875ABB253B3BD50046FBDF /* NVLPUITests.swift */; };
 		B0875AD8253B85880046FBDF /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0875AD7253B85880046FBDF /* IntroViewController.swift */; };
 		B0875AE9253B880A0046FBDF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0875AE8253B880A0046FBDF /* String.swift */; };
@@ -96,7 +95,6 @@
 		B0875AA5253B3BD50046FBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0875AA7253B3BD50046FBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0875AAC253B3BD50046FBDF /* NVLPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVLPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0875AB0253B3BD50046FBDF /* NVLPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVLPTests.swift; sourceTree = "<group>"; };
 		B0875AB2253B3BD50046FBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0875AB7253B3BD50046FBDF /* NVLPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVLPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0875ABB253B3BD50046FBDF /* NVLPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVLPUITests.swift; sourceTree = "<group>"; };
@@ -247,7 +245,6 @@
 		B0875AAF253B3BD50046FBDF /* NVLPTests */ = {
 			isa = PBXGroup;
 			children = (
-				B0875AB0253B3BD50046FBDF /* NVLPTests.swift */,
 				B07F86DC2547AD2400815747 /* SSETest.swift */,
 				B07F86E42547B20E00815747 /* IntroViewModelTest.swift */,
 				B07F87052548755800815747 /* ChartViewModelTest.swift */,
@@ -620,7 +617,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07F86E52547B20E00815747 /* IntroViewModelTest.swift in Sources */,
-				B0875AB1253B3BD50046FBDF /* NVLPTests.swift in Sources */,
 				B07F86F22547BB6B00815747 /* ChartViewControllerTest.swift in Sources */,
 				B07F86DD2547AD2500815747 /* SSETest.swift in Sources */,
 				B07F86ED2547B7B300815747 /* IntroViewControllerTest.swift in Sources */,
