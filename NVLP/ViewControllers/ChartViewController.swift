@@ -49,7 +49,11 @@ class ChartViewController : UIViewController{
             if success == true{
                 DispatchQueue.main.async {
                    KRProgressHUD.dismiss()
-                    self.updateChart()
+                    UIView.animate(withDuration: 0.3) { [weak self] in
+                        self?.updateChart()
+
+                    }
+                    
                 }
             }
         }
@@ -83,8 +87,7 @@ class ChartViewController : UIViewController{
             let text = currencyLabels[i]
             labels[i]?.text = text
         }
-       
-    
+
         let current = chartModel.currentData
         let changes = chartModel.currencyChanges
         
@@ -120,13 +123,10 @@ class ChartViewController : UIViewController{
         }
         let dataSet = BarChartDataSet(entries: chartData, label: "Latest Prices")
         dataSet.colors = ChartColorTemplates.liberty()
-        
         let barChartData = BarChartData(dataSet: dataSet)
         self.barChartView.xAxis.valueFormatter =  IndexAxisValueFormatter(values: currencyLabels)
         self.barChartView.data = barChartData
- 
-       
-        
+
     }
     
 }
