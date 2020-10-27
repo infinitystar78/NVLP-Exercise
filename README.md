@@ -61,7 +61,7 @@ Additionally a library called AlamoFireEventSource has been forked to listen for
 
 # Next Steps - Challenges
 
-SSE is not widely used for iOS and has much less support than websockets, two libaries were tried, and both were unable to understand the delimiters that the events are using, which is why the AlamofireEvent source has been forked to simply decode the data into a JSON string using UTF8 and then parse that JSON. 
+SSE is not widely used for iOS and has much less support than websockets, two libaries were tried, and both were unable to understand the delimiters that the events are using, which is why the AlamofireEvent source has been forked to simply decode the data into a JSON string using UTF8 and then parse that JSON ready to be consumed into the view models.
 
 # Next Steps - Further Development / TODO
 
@@ -71,7 +71,7 @@ SSE is not widely used for iOS and has much less support than websockets, two li
 * Write a data persistance layer using CoreData or Realm.
 * Format charts to improve readability.
 * Basic UI tests.
-* Investigate what delimiters are being used by the events, as they seem to be non standard, which is why a fork of the event data parser has been used. Perhaps use websockets instead but needs to be aligned with the logic behind using SSE.
+* Investigate what delimiters are being used by the events, as they seem to be non standard, which is why a fork of the event data handler has been used. Perhaps use websockets instead but needs to be aligned with the logic behind using SSE.
 
 
 
