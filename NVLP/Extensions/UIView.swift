@@ -17,4 +17,16 @@ extension  UIView{
         self.layer.masksToBounds = true
     }
  
+    func addShadowToViewWithCornerRadius() {
+        layer.masksToBounds = false
+        layer.shadowOffset = CGSize(width: 0, height: 0)
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowRadius = 8.0
+        layer.shadowOpacity = 0.07
+        
+        let backgroundCGColor = backgroundColor?.cgColor
+        backgroundColor = nil
+        layer.backgroundColor =  backgroundCGColor
+       
+    }
 }

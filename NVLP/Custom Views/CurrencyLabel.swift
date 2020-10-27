@@ -30,7 +30,7 @@ class CurrencyLabel: UILabel {
 
      func configureLabel() {
         self.attributedText = NSAttributedString(string: self.text!, attributes: [NSAttributedString.Key.font :UIFont.subHeadingFont, NSAttributedString.Key.foregroundColor : UIColor.label])
-        self.textAlignment = .left
+        self.textAlignment = .center
      }
 
 }

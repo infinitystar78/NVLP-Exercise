@@ -17,6 +17,7 @@ class ChartViewController : UIViewController{
     public var chartModel = ChartViewModel()
     private let sse = SSEConnection()
 
+    @IBOutlet weak var currencyParentView: UIView!
     @IBOutlet weak var barChartView: BarChartView!
     @IBOutlet weak var currency_1: CurrencyLabel!
     @IBOutlet weak var currency_1_change: UILabel!
@@ -38,6 +39,7 @@ class ChartViewController : UIViewController{
     
     override func viewDidLoad() {
         self.connectToServer()
+        currencyParentView.addShadowToViewWithCornerRadius()
     }
     
     
@@ -92,7 +94,7 @@ class ChartViewController : UIViewController{
         let changes = chartModel.currencyChanges
         
         for i in 0..<changelabels.count{
-            changelabels[i]?.textAlignment = .right
+            changelabels[i]?.textAlignment = .center
             let text = currencyLabels[i]
             changes.forEach { (changesDictionary) in
                 if text == changesDictionary.key{
