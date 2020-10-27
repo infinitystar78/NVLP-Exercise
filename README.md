@@ -14,6 +14,8 @@ To install cocoapods, please go to your terminal and type: $ sudo gem install co
 Then navigate to your project directory and type :
 
 pod install
+This will create the xcworkspace file please use this after installing cocoapods.
+
 
 Full details on cocoapods can be found here:
 https://cocoapods.org
