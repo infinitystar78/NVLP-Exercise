@@ -38,9 +38,11 @@ The application is required to do the following :
 
 # Architecture
 
-The application has followed a basis MVVM pattern, with some class extensions and one subclass for convenience methods. 
+As this application is relativley simple a single storyboard has been used with two ViewControllers, with the second being embedded in a UINavigationController. each view controller has a corresponding view model to handle data logic, and business logice, with the ViewControllers handling presentation logic, these ViewControllers could be reduced in size further through the use of presenters.
 
-The networking layer follows a protocol based approach, using URLSession, AlamoFire is used to connect to the Server Sent Events server.
+The application has followed a basis MVVM pattern, with some class extensions and one subclass for convenience methods and helpers. 
+
+The networking layer follows a protocol based approach, using URLSession, AlamoFire is used to connect to the Server Sent Events server, as a forked version of a SS E event handler has been used.
 
 The secure Keychain is used to store the token.
 
