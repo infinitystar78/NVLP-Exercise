@@ -225,18 +225,18 @@
 		B0875A95253B3BD30046FBDF /* NVLP */ = {
 			isa = PBXGroup;
 			children = (
-				B07F86C725479CD100815747 /* Custom Views */,
-				B06FA84C253D113A001C88DE /* SSE Connection */,
-				B0BCA81C253C84A300000C81 /* Networking */,
 				B0875A96253B3BD30046FBDF /* AppDelegate.swift */,
 				B0875A98253B3BD30046FBDF /* SceneDelegate.swift */,
 				B0875A9C253B3BD30046FBDF /* Main.storyboard */,
-				B0875AF2253B88AB0046FBDF /* ViewModels */,
-				B0875AE1253B85C20046FBDF /* ViewControllers */,
 				B0875AA2253B3BD50046FBDF /* Assets.xcassets */,
 				B0875AA4253B3BD50046FBDF /* LaunchScreen.storyboard */,
 				B0875AA7253B3BD50046FBDF /* Info.plist */,
 				B0875A9F253B3BD30046FBDF /* NVLP.xcdatamodeld */,
+				B0BCA81C253C84A300000C81 /* Networking */,
+				B06FA84C253D113A001C88DE /* SSE Connection */,
+				B0875AF2253B88AB0046FBDF /* ViewModels */,
+				B0875AE1253B85C20046FBDF /* ViewControllers */,
+				B07F86C725479CD100815747 /* Custom Views */,
 				B0BCA8A1253CF35200000C81 /* Extensions */,
 			);
 			path = NVLP;

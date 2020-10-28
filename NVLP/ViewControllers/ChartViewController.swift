@@ -16,7 +16,6 @@ class ChartViewController : UIViewController{
     
     public var chartModel = ChartViewModel()
     private let sse = SSEConnection()
-
     @IBOutlet weak var currencyParentView: UIView!
     @IBOutlet weak var barChartView: BarChartView!
     @IBOutlet weak var currency_1: CurrencyLabel!
@@ -36,12 +35,10 @@ class ChartViewController : UIViewController{
     @IBOutlet weak var currency_8: CurrencyLabel!
     @IBOutlet weak var currency_8_change: UILabel!
     
-    
     override func viewDidLoad() {
         self.connectToServer()
         currencyParentView.addShadowToViewWithCornerRadius()
     }
-    
     
     func connectToServer(){
         DispatchQueue.main.async {

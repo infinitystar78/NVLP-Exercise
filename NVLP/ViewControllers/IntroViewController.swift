@@ -63,11 +63,10 @@ class IntroViewController: UIViewController ,UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
-    
-
     func textFieldDidEndEditing(_ textField: UITextField) {
         viewModel?.emailAddress = textField.text
-        viewModel?.validateEmailAddress(completionHandler: { [self] (success) in
+        viewModel?.validateEmailAddress(completionHandler: { [weak self] (success) in
+            guard let self = self else { return }
             if success == true{
                 self.displayErrorMessage(error: false)
             }else{
@@ -128,12 +127,6 @@ class IntroViewController: UIViewController ,UITextFieldDelegate {
           
         })
     }
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-
-    
 
 }
 
